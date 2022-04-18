@@ -39,6 +39,7 @@ public class RMQMetricsServiceImpl implements RMQMetricsService {
     private CollectorRegistry registry = new CollectorRegistry();
     private final RMQMetricsCollector rmqMetricsCollector;
 
+    @Override
     public RMQMetricsCollector getCollector() {
         return rmqMetricsCollector;
     }

@@ -50,6 +50,7 @@ public class RMQMetricsServiceImpl implements RMQMetricsService {
         rmqMetricsCollector.register(registry);
     }
 
+    @Override
     public void metrics(StringWriter writer) throws IOException {
         this.writeEscapedHelp(writer, registry.metricFamilySamples());
     }
